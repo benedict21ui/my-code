@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Computer Device Hub</title> 
+    <link rel="stylesheet" href="../css/customstyle.css">
+</head>
+
+<body>
+    <!-- STARTING HEADER -->
+    <header> 
+        <h1>Computer Device Hub</h1> 
+        <h2>Computer Whiz</h2>
+        <div class="container">
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contactUs.html">Contact Us</a> |
+            <a href="inquiry.html">Inquiry</a> |
+            <a href="profile.html">Profile</a>
+        </div>
+    </header>
+    <!-- ENDING HEADER -->
+
+    <!-- STARTING SECTION -->
+    <section>
+        <nav>
+            <ul class="navigation_menu">
+                <li><a href="heading.html">Heading</a></li>
+                <li><a href="HTML list.html">HTML List</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="forms.html">Form</a></li>
+                <li><a href="image.html">Image</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1><b>Forms</b></h1>
+            <p align="justify">
+                <!-- Start of the form element -->
+                <form action="submit_form.php" method="POST">
+                    <!-- various form controls -->
+                    <label for="first_name">First name:</label>
+                    <input type="text" name="first_name" id="first_name" required />
+                    <br><br>
+
+                    <label for="last_name">Last name:</label>
+                    <input type="text" name="last_name" id="last_name" required />
+                    <br><br>
+
+                    <label for="age">Age:</label>
+                    <select id="age" name="age" required>
+                        <option value="" disabled selected>Your age</option>
+                        <!-- Age options -->
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                    <br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required />
+                    <br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+                    <br><br>
+
+                    <label for="message">Message:</label>
+                    <input type="text" name="message" id="message" />
+                    <br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </p>
+        </article>
+    </section>
+    <!-- ENDING SECTION -->
+
+    <!-- STARTING TAG FOOTER -->
+    <footer>
+        <h2>Computer Device</h2>
+        <div class="footer menu">
+            <a href="about.html">About us</a> |
+            <a href="">Refund policy</a> |
+            <a href="">Terms of use</a> |
+            <a href="">Privacy policy</a> |
+            <a href="">FAQ'S</a> |
+            <a href="">Affiliates</a> |
+            <a href="contactUs.html">Contact</a> |
+        </div>
+        <div> 
+            <p><b>Copyright &copy; Student of BSIS 3A. All rights reserved.</b></p>
+        </div>
+    </footer>
+    <!-- ENDING TAG FOOTER -->
+</body>
+</html>
